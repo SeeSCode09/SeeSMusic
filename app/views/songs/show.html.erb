@@ -1,0 +1,16 @@
+<h1><%= @song.title %></h1>
+
+<div class="index">
+  <ul class="small-block-grid-2">
+    <li> <img class="songimage" src="<%= @song.image %>"> </li>
+    <li>
+      <h2><%= @song.title %></h2>
+      <p> <strong>Artist:</strong> <%= @song.artist %><p>
+      <p> <strong>Producer:</strong> <%= @song.producer %></p>
+      <p> <strong>Album:</strong> <%= @song.album %></p>
+      <p> <strong>Description:</strong> <%= @song.description %></p>
+    </li>
+
+</div>
+
+<p class="embed"> Song: <%= @song.embed.html_safe %></p>

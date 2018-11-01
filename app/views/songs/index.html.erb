@@ -1,0 +1,15 @@
+<h1> Songs Index Page </h1>
+
+
+
+<div class="index">
+  <ul class="small-block-grid-3">
+    <% @songs.each do |song| %>
+    <li>
+      <h3><%= link_to song.title, song %></h3>
+      <img src="<%= song.image %>" width="500px">
+      <p><%= song.description %></p>
+    </li>
+    <% end %>
+  </ul>
+</div>
